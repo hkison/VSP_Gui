@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
@@ -77,9 +78,15 @@ public class PhilosophersGUI extends JPanel {
     }
 
     public static void main(String[] args) {
+//        if (GraphicsEnvironment.isHeadless()) {
+//            System.out.println("Headless environment detected. Exiting...");
+//            System.exit(1);
+//        }
+
         // Set number of philosophers to a random value between 1 and 10
         Random random = new Random();
         int numPhilosophers = random.nextInt(10) + 1;
+
 
         // Create the GUI frame
         JFrame frame = new JFrame("Dining Philosophers Problem");
